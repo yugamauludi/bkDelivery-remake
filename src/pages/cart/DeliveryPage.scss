@@ -1,0 +1,17 @@
+.form-phone {
+  position: relative;
+  .country-code {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+  }
+  .input-phone {
+    padding-left: 40px;
+  }
+}
+.address {
+  .note {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}

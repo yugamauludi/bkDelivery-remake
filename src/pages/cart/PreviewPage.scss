@@ -1,0 +1,30 @@
+.table-cart {
+  width: 100%;
+  & tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  & th {
+    padding-bottom: 8px;
+    min-width: 100px;
+  }
+  & td {
+    padding: 15px 0;
+    .image {
+      max-width: 70px;
+      margin-right: 5px;
+    }
+    .title-product {
+      max-width: 90%;
+      font-weight: bold;
+    }
+    .subtitle {
+      color: #919191;
+      font-size: 14px;
+    }
+    .icon-trash {
+      margin-left: 15px;
+      width: 25px;
+      cursor: pointer;
+    }
+  }
+}

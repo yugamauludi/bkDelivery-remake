@@ -1,0 +1,57 @@
+.table-item {
+  width: 100%;
+  & tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  & th {
+    padding-bottom: 8px;
+    min-width: 100px;
+    font-size: 13px;
+  }
+  & td {
+    padding: 12px 0;
+    font-size: 12px;
+  }
+}
+.table-price {
+  width: 100%;
+  & td {
+    font-size: 15px;
+  }
+}
+.total-bill {
+  font-family: FlameRegular;
+  font-size: 22px;
+}
+.payment-right {
+  .title-sec {
+    font-size: 13px;
+  }
+  .caption {
+    font-size: 12px;
+  }
+  .pay-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    cursor: pointer;
+    position: relative;
+    .icon-check {
+      display: none;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+    &.active {
+      border-color: #ed7801;
+      .icon-check {
+        display: block;
+      }
+    }
+    img {
+      height: 15px;
+    }
+  }
+}

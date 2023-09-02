@@ -1,0 +1,12 @@
+.image-product {
+  &-detail {
+    max-width: 290px;
+    @media screen and (max-width: 770px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    display: flex;
+    justify-content: center;
+  }
+}

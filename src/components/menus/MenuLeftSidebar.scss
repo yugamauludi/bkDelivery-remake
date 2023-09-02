@@ -1,0 +1,22 @@
+.wrapper-sidebar {
+  .item-sidebar {
+    background-color: #fbe6d6;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #502314;
+    padding: 7px 15px;
+    font-weight: bold;
+    white-space: normal; /* Mengatur teks untuk memecah ke bawah */
+    min-width: 150px;
+    @media screen and (max-width: 770px) {
+      margin-right: 15px;
+    }
+    &.active {
+      background-color: #faaf18;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    display: flex;
+    overflow-x: auto;
+  }
+}

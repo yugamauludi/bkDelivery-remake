@@ -1,0 +1,18 @@
+.form-input-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-weight: bold;
+  .control {
+    font-size: 22px;
+    color: #faaf18;
+    cursor: pointer;
+    padding: 0 12px;
+  }
+  .qty {
+    font-size: 20px;
+  }
+}

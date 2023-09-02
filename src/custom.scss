@@ -1,0 +1,327 @@
+$font-family-base: "FlameSans";
+$title-color: #8b542f;
+$background-gold: #ed7801;
+
+@import '~bootstrap/scss/bootstrap.scss';
+.mr-2 {
+  margin-right: 2px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.text-right {
+  text-align: right;
+}
+.text-old-gold {
+  color: $title-color;
+}
+.text-gold {
+  color: $background-gold;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.decoration-none {
+  text-decoration: none;
+}
+.border-left {
+  border-left: 1px solid #e0e0e0;
+}
+.navbar-brand {
+  position: relative;
+  width: 90px;
+}
+.form-group {
+  position: relative;
+  margin: 20px 0;
+  .form-label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .max-content {
+    font-size: 14px;
+    position: absolute;
+    bottom: -23px;
+    right: 5px;
+    color: #b7b7b7;
+  }
+}
+.btn-order {
+  color: white;
+  background-color: $background-gold;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    color: white;
+    background-color: #df7305;
+  }
+}
+.btn-order-outline {
+  color: $background-gold;
+  border-color: $background-gold;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    color: #bd6002;
+    border-color: #bd6002;
+  }
+}
+.btn-link-outline {
+  color: $background-gold;
+  font-weight: bold;
+  width: 100%;
+  text-decoration: none;
+  &:hover {
+    color: $title-color;
+  }
+}
+.navbar {
+  .website {
+    &-right {
+      display: flex;
+    }
+    .wrapper-ic-cart {
+      position: relative;
+      background-color: $background-gold;
+      font-weight: bold;
+      width: 100%;
+      margin-top: -26px;
+      margin-bottom: -26px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 770px) {
+        margin-top: -18px;
+        margin-bottom: -18px;
+        padding: 0 10px;
+      }
+      .total-cart {
+        background-color: red;
+        color: white;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+      }
+    }
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
+  }
+  .mobile {
+    position: relative;
+    width: 100%;
+    &-toggler {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &-logo {
+      margin: auto;
+      display: table;
+    }
+    &-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      .wrapper-ic-cart {
+        position: relative;
+        background-color: $background-gold;
+        font-weight: bold;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        .total-cart {
+          background-color: red;
+          color: white;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          position: absolute;
+          top: 2px;
+          right: 2px;
+        }
+      }
+    }
+    @media screen and (min-width: 770px) {
+      display: none;
+    }
+  }
+  &-logo {
+    position: absolute;
+    top: -20px;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    @media screen and (max-width: 770px) {
+      position: unset;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .nav-link {
+    line-height: 20px;
+    color: $white;
+  }
+  .subtitle {
+    color: #faaf18;
+  }
+  .title {
+    font-family: FlameBold;
+    font-size: 25px;
+    @media screen and (max-width: 770px) {
+      font-size: 16px;
+    }
+  }
+}
+.footer {
+  padding: 20px 0;
+  a {
+    color: white;
+    text-decoration: unset;
+  }
+  .title {
+    font-size: 20px;
+    font-family: FlameBold;
+    @media screen and (max-width: 1025px) {
+      text-align: center;
+    }
+  }
+  .second {
+    display: flex;
+    font-family: FlameBold;
+    @media screen and (max-width: 1025px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .phone {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .third {
+    display: flex;
+    @media screen and (max-width: 1025px) {
+      display: block;
+      text-align: center;
+    }
+    @media screen and (min-width: 1026px) {
+      .right-line {
+        border-right: 1px solid white;
+        padding-right: 12px
+      }
+    }
+  }
+}
+.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 80vh;
+  .title {
+    font-family: FlameBold;
+    font-size: 30px;
+    text-align: center;
+    color: $title-color;
+  }
+  .wrapper-menu {
+    background-color: white;
+    box-shadow: 2px 2px 15px -4px #6b6b6b;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .image-menu {
+      width: 100%;
+    }
+    .menu-title {
+      font-family: FlameBold;
+      font-size: 21px;
+      color: $title-color;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .product-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-title {
+      font-family: FlameBold;
+      font-size: 21px;
+      color: $title-color;
+      line-height: 1.2;
+    }
+    .product-note {
+      line-height: 1.2;
+    }
+    .product-price {
+      font-weight: bold;
+      font-size: 17px;
+      color: $title-color;
+      line-height: 1.2;
+    }
+  }
+}
+.right-product {
+  border-left: 1px solid #e0e0e0;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 770px) {
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .title-subtotal {
+    font-family: FlameSans;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .cart-price {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .add-on {
+    font-size: 13px;
+    color: $title-color;
+  }
+  .note-cart {
+    font-size: 13px;
+    color: #919191;
+    line-height: 1;
+  }
+}
